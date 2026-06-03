@@ -72,6 +72,7 @@ function Universe() {
             <Button
                 variant="contained"
                 size="large"
+                onClick={() => window.location.href = "http://localhost:3000/signup"}
                 sx={{ marginY: 2, fontSize: "22px", paddingX: 4, textTransform: "none" }}
             >
                 Sign up for free

@@ -16,7 +16,7 @@ function ProductPage() {
                 <Typography variant='h5'>Kite</Typography>
                 <Typography variant='body1' sx={{fontSize:"18px",color:"#656565"}}>Our ultra-fast flagship trading platform with streaming market data, advanced charts, an elegant UI, and more. Enjoy the Kite experience seamlessly on your Android and iOS devices.</Typography>
                 <Box sx={{display:"flex",flexDirection:"row",gap:7,marginBottom:1}}>
-                    <CustomLink title="Try demo" link="#"/>
+                    <CustomLink title="Try demo" link="http://localhost:3000" />
                     <CustomLink title="Learn more" link="#"/>
                 </Box>
                 <Box sx={{display:"flex",flexDirection:"row",gap:2}}>
