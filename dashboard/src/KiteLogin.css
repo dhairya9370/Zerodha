@@ -1,0 +1,189 @@
+/* Container Setup */
+.kite-page-container {
+  min-height: 100vh;
+  background-color: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  padding: 15px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+/* Card centering container */
+.kite-card-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Main Box structure */
+.kite-login-card {
+  width: 100%;
+  max-width: 430px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  padding: 45px 40px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.02);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.kite-brand-logo {
+  margin-bottom: 30px;
+}
+
+.kite-card-title {
+  font-size: 24px;
+  color: #444444;
+  font-weight: 400;
+  margin-bottom: 35px;
+  letter-spacing: 0.3px;
+}
+
+/* Form & Layout inputs */
+.kite-form {
+  width: 100%;
+}
+
+.kite-input-group {
+  margin-bottom: 22px;
+  width: 100%;
+  position: relative;
+}
+
+.kite-input-group input {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  padding: 11px 15px;
+  font-size: 14px;
+  color: #444444;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.kite-input-group input::placeholder {
+  color: #9b9b9b;
+}
+
+.kite-input-group input:focus {
+  border-color: #ff5722;
+}
+
+/* Custom Password toggle style configuration */
+.password-wrapper input {
+  padding-right: 55px;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #9b9b9b;
+  font-size: 12px;
+  cursor: pointer;
+  outline: none;
+}
+
+.password-toggle-btn:hover {
+  color: #444444;
+}
+
+/* Action Trigger */
+.kite-submit-btn {
+  width: 100%;
+  background-color: #ff5722;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  margin-top: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.kite-submit-btn:hover {
+  background-color: #f04f1a;
+}
+
+.kite-forgot-link {
+  display: inline-block;
+  margin-top: 25px;
+  font-size: 13px;
+  color: #9b9b9b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.kite-forgot-link:hover {
+  color: #ff5722;
+}
+
+/* Footer Section Rules */
+.kite-footer {
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+  color: #9b9b9b;
+  padding-bottom: 10px;
+}
+
+.kite-store-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 13px;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.kite-footer-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: #a5a5a5;
+  margin-bottom: 18px;
+}
+
+.kite-signup-text {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.kite-signup-text a {
+  color: #ff5722;
+  text-decoration: none;
+}
+
+.kite-signup-text a:hover {
+  text-decoration: underline;
+}
+
+.kite-legal-disclaimer {
+  font-size: 10px;
+  line-height: 1.6;
+  opacity: 0.75;
+  margin: 0;
+}
+
+.kite-legal-disclaimer .link {
+  text-decoration: underline;
+  cursor: pointer;
+}

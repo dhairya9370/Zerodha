@@ -1,0 +1,199 @@
+/* Container Flexbox Framework Layout */
+.kite-signup-container {
+  min-height: 100vh;
+  background-color: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  padding: 15px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.kite-signup-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Precise alignment mapping for the card dimensions */
+.kite-signup-card {
+  width: 100%;
+  max-width: 430px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  padding: 45px 40px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.02);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.brand-logo {
+  margin-bottom: 30px;
+}
+
+.signup-card-title {
+  font-size: 24px;
+  color: #444444;
+  font-weight: 400;
+  margin-bottom: 35px;
+  letter-spacing: 0.3px;
+}
+
+/* Form structures */
+.signup-form {
+  width: 100%;
+}
+
+.signup-error-msg {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 13px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.signup-input-group {
+  margin-bottom: 22px;
+  width: 100%;
+  position: relative;
+}
+
+.signup-input-group input {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  padding: 11px 15px;
+  font-size: 14px;
+  color: #444444;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.signup-input-group input::placeholder {
+  color: #9b9b9b;
+}
+
+.signup-input-group input:focus {
+  border-color: #ff5722;
+}
+
+/* Visibility toggle btn configuration positioning overlay */
+.password-field input {
+  padding-right: 55px;
+}
+
+.inline-toggle-btn {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #9b9b9b;
+  font-size: 12px;
+  cursor: pointer;
+  outline: none;
+}
+
+.inline-toggle-btn:hover {
+  color: #444444;
+}
+
+/* Brand Orange Call to Action Style mapping */
+.signup-submit-btn {
+  width: 100%;
+  background-color: #ff5722;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  margin-top: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.signup-submit-btn:hover {
+  background-color: #f04f1a;
+}
+
+.signup-forgot-link {
+  display: inline-block;
+  margin-top: 25px;
+  font-size: 13px;
+  color: #9b9b9b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.signup-forgot-link:hover {
+  color: #ff5722;
+}
+
+/* Footer layout elements */
+.signup-footer {
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+  color: #9b9b9b;
+  padding-bottom: 10px;
+}
+
+.store-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 13px;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: #a5a5a5;
+  margin-bottom: 18px;
+}
+
+.login-prompt-text {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.login-redirect-link {
+  color: #ff5722;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login-redirect-link:hover {
+  text-decoration: underline;
+}
+
+.legal-disclaimer {
+  font-size: 10px;
+  line-height: 1.6;
+  opacity: 0.75;
+  margin: 0;
+}
+
+.legal-disclaimer .link {
+  text-decoration: underline;
+  cursor: pointer;
+}

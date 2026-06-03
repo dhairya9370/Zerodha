@@ -1,0 +1,138 @@
+/* Backdrop dim effect covering the whole screen */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4); /* Dimmed background layer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensures it floats on top of headers/sidebars */
+}
+
+/* Updated Floating Window Style */
+.order-window-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  padding: 24px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 6px;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.2); /* Soft shadow depth */
+  box-sizing: border-box;
+}
+
+.inputs-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+/* Floating Label Logic Container */
+.input-group {
+  position: relative;
+  flex: 1;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  background: transparent;
+  box-sizing: border-box;
+  color: #444;
+  transition: border-color 0.2s ease;
+}
+
+/* Subtle border color change on focus */
+.input-group input:focus {
+  border-color: #4185f4;
+}
+
+/* Label Default Placement (Centered inside input) */
+.input-group label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 0 4px;
+  color: #9b9b9b;
+  font-size: 14px;
+  transition: 0.2s ease all;
+  pointer-events: none;
+}
+
+/* Magic Move: If input is focused OR has text (placeholder is NOT shown) -> Move label up */
+.input-group input:focus ~ label,
+.input-group input:not(:placeholder-shown) ~ label {
+  top: 0;
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+/* Blue label on active focus */
+.input-group input:focus ~ label {
+  color: #4185f4;
+}
+
+/* Remove default spinner arrows for clean look (Optional) */
+.input-group input::-webkit-outer-spin-button,
+.input-group input::-webkit-inner-spin-button {
+  margin: 0;
+}
+
+/* Actions Layout */
+.actions-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.margin-text {
+  font-size: 14px;
+  color: #444;
+}
+
+.margin-text span {
+  font-weight: 500;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons Styling */
+.btn {
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-buy {
+  background-color: #4185f4;
+  color: #fff;
+}
+
+.btn-buy:hover {
+  background-color: #2a75f3;
+}
+
+.btn-cancel {
+  background-color: #e0e0e0;
+  color: #666;
+}
+
+.btn-cancel:hover {
+  background-color: #d5d5d5;
+}

@@ -1,0 +1,113 @@
+/* Container for the profile trigger area */
+.navbar-profile-section {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profile-trigger {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Rounded ZU Initials Avatar Badge */
+.avatar-badge {
+  width: 30px;
+  height: 30px;
+  background-color: #f1dbf5; /* Soft purple hue from the Zerodha UI */
+  color: #ba68c8; /* Darker purple text accent */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* UserID Text String */
+.user-id {
+  font-size: 13px;
+  color: #9b9b9b;
+  letter-spacing: 0.5px;
+}
+
+.profile-trigger:hover .user-id {
+  color: #ff5722; /* Hover orange accent color */
+}
+
+/* The Floating Dialog Box Popup */
+.profile-popup {
+  position: absolute;
+  top: 40px; /* Positions it directly below your avatar trigger */
+  right: 0;
+  width: 220px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 15px 0;
+  z-index: 999; /* Keeps it on top of other content modules */
+}
+
+.popup-header {
+  padding: 0 18px 5px 18px;
+}
+
+.popup-header .user-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444444;
+}
+
+.popup-header .user-email {
+  margin: 3px 0 0 0;
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+.popup-divider {
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  margin: 10px 0;
+}
+
+.popup-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-link {
+  text-decoration: none;
+  font-size: 13px;
+  color: #555555;
+  padding: 8px 18px;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.popup-link:hover {
+  background-color: #fbfbfb;
+  color: #ff5722;
+}
+
+/* Mandatory Logout Button Action Styles */
+.logout-btn {
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 13px;
+  color: #d32f2f; /* Standard soft danger red alignment */
+  padding: 8px 18px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 500;
+  outline: none;
+  transition: background-color 0.15s;
+}
+
+.logout-btn:hover {
+  background-color: #ffebee; /* Soft subtle red highlight glow */
+}
